@@ -28,6 +28,11 @@ const NavigationBar = ({ logoImageUrl }) => {
                     activeClassName="active"
                     className="nav-link">About us</NavLink>
 
+                    <NavLink
+                    to="/Cart"
+                    activeClassName="active"
+                    className="nav-link">Cart</NavLink>
+
                 </NavigationBarLinkWrapper>
               </Router>
             </div>
