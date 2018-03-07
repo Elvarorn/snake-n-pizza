@@ -6,16 +6,23 @@ import thunk from 'redux-thunk';
 import reducers from './reducers/reducers';
 import Menu from './components/Menu/Menu';
 import Offers from './components/Offers/Offers';
+import Cart from './components/Cart/Cart';
+import AboutUs from './components/AboutUs/AboutUs';
 import NavigationBar from './components/NavigationBar/NavigationBar';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
-  return (<div className="menu-offers">
-            <NavigationBar logoImageUrl="https://www1-lw.xda-cdn.com/files/2012/11/pizza-snake.jpg" />
-            <Menu/>
-            <p> offers :</p>
-            <Offers/>
-        </div>
+  return (
+      <div className="menu-offers">
+          <NavigationBar logoImageUrl="https://www1-lw.xda-cdn.com/files/2012/11/pizza-snake.jpg" />
+          <Switch>
+              <Route exact path="/" component={Menu} />
+              <Route path="/Offers" component={Offers} />
+              <Route path="/AboutUs" component={AboutUs} />
+              <Route path="/Cart" component={Cart} />
+          </ Switch>
+      </div>
       );
 };
 
-ReactDOM.render(<Provider store={createStore(reducers, applyMiddleware(thunk))}><App /></Provider>, document.getElementById('app'));
+ReactDOM.render(<Provider store={createStore(reducers, applyMiddleware(thunk))}><Router><App /></ Router></Provider>, document.getElementById('app'));

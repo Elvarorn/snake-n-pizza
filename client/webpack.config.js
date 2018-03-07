@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: 'C:/Users/Elvar/documents/veff/pizzeria/snake-n-pizza/client/src/App.js',
+    entry: './src/App.js',
     output: {
        path: path.resolve(__dirname, 'dist'),
        filename: 'bundle.js',
@@ -15,7 +15,7 @@ module.exports = {
         ]
     },
     devServer: {
-      port:1337,
+      port:9060,
       open:true,
       compress: true,
       historyApiFallback: true
