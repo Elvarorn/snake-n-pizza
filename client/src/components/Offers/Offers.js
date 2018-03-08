@@ -1,25 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Offer from '../Offer/Offer';
 import { getAllOffers } from '../../actions/offerActions';
 
 
 class Offers extends React.Component {
   componentDidMount() {
-    const {getAllOffers} = this.props;
+    const { getAllOffers } = this.props;
     getAllOffers();
   }
     render() {
-      const {offer} = this.props;
+      const { offer} = this.props;
       return (
         <div className="container">
-            {offer.map(o => <Offer key={o.id} offer={o} />)}
+            {offer.map((m, i) => ( <div className="offersbox" key={i}>{m.offer + ' Price: ' + m.price + ' Valid for: ' + m.validFor}</div> ))}
         </div>
       )
     }
 };
 
-const mapStateToProps = ({offer}) => {
+const mapStateToProps = ({ offer }) => {
   return { offer }
 }
 

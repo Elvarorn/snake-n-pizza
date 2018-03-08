@@ -16,10 +16,10 @@ const App = () => {
       <div className="menu-offers">
           <NavigationBar logoImageUrl="https://www1-lw.xda-cdn.com/files/2012/11/pizza-snake.jpg" />
           <Switch>
-              <Route exact path="/" component={Menu} />
-              <Route path="/Offers" component={Offers} />
-              <Route path="/AboutUs" component={AboutUs} />
-              <Route path="/Cart" component={Cart} />
+              <Route exact path="/" component={ Menu } />
+              <Route path="/Offers" component={ Offers } />
+              <Route path="/AboutUs" component={ AboutUs } />
+              <Route path="/Cart" component={ Cart } />
           </ Switch>
       </div>
       );
