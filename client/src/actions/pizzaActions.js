@@ -6,8 +6,8 @@ export const getAllPizzas = () => {
 };
 
 const getAllPizzasSuccess = (pizzas) => {
-  return {
-    type: GET_ALL_PIZZAS,
-    payload: pizzas
-  };
+    return {
+        type: GET_ALL_PIZZAS,
+        payload: pizzas
+    };
 };

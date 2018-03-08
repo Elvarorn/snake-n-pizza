@@ -7,31 +7,31 @@ const NavigationBar = ({ logoImageUrl }) => {
     return (
         <nav className="navbar">
             <div className="nav-logo">
-            <div className="navbar-image">
-                <img src={ logoImageUrl } alt="" width="1200" height="350" />
-            </div>
+                <div className="navbar-image">
+                    <img src={ logoImageUrl } alt="" width="1200" height="350" />
+                </div>
                 <NavigationBarLinkWrapper>
 
                     <NavLink
-                    exact
-                    to="/"
-                    activeClassName="active"
-                    className="nav-link">Menu</NavLink>
+                        exact
+                        to="/"
+                        activeClassName="active"
+                        className="nav-link">Menu</NavLink>
 
                     <NavLink
-                    to="/Offers"
-                    activeClassName="active"
-                    className="nav-link">Offers</NavLink>
+                        to="/Offers"
+                        activeClassName="active"
+                        className="nav-link">Offers</NavLink>
 
                     <NavLink
-                    to="/AboutUs"
-                    activeClassName="active"
-                    className="nav-link">About us</NavLink>
+                        to="/AboutUs"
+                        activeClassName="active"
+                        className="nav-link">About us</NavLink>
 
                     <NavLink
-                    to="/Cart"
-                    activeClassName="active"
-                    className="nav-link">Cart</NavLink>
+                        to="/Cart"
+                        activeClassName="active"
+                        className="nav-link">Cart</NavLink>
                 </NavigationBarLinkWrapper>
 
             </div>

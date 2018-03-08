@@ -10,8 +10,8 @@ const AboutUs = () => {
                 we try to incorporate that in our pizzas.
             </p>
             <div className="image-of-bois">
-            <img src="https://image.ibb.co/fLnt3S/boiiss.png" alt="strakarnir" width="400" height="400"></img>
-            <p className="text-image">Proud owners of Snake&Pizza: Elvar Örn Antonsson, Dagur Árnason, Jóhann Einar Ísaksson</p>
+                <img src="https://image.ibb.co/fLnt3S/boiiss.png" alt="strakarnir" width="400" height="400"></img>
+                <p className="text-image">Proud owners of Snake&Pizza: Elvar Örn Antonsson, Dagur Árnason, Jóhann Einar Ísaksson</p>
             </div>
 
         </div>

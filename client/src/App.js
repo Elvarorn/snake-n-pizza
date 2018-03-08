@@ -13,18 +13,18 @@ import NavigationBar from './components/NavigationBar/NavigationBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 const App = () => {
-  return (
-      <div className="menu-offers">
-          <NavigationBar logoImageUrl="https://image.ibb.co/jxR33S/logosup.png" />
-          <Switch>
-              <Route exact path="/" component={ Menu } />
-              <Route path="/Offers" component={ Offers } />
-              <Route path="/AboutUs" component={ AboutUs } />
-              <Route path="/Cart" component={ Cart } />
-              <Route path="/pizza" component= { PizzaDetail } />
-          </ Switch>
-      </div>
-      );
+    return (
+        <div className="menu-offers">
+            <NavigationBar logoImageUrl="https://image.ibb.co/jxR33S/logosup.png" />
+            <Switch>
+                <Route exact path="/" component={ Menu } />
+                <Route path="/Offers" component={ Offers } />
+                <Route path="/AboutUs" component={ AboutUs } />
+                <Route path="/Cart" component={ Cart } />
+                <Route path="/pizza" component= { PizzaDetail } />
+            </ Switch>
+        </div>
+    );
 };
 
 ReactDOM.render(<Provider store={createStore(reducers, applyMiddleware(thunk))}><Router><App /></ Router></Provider>, document.getElementById('app'));

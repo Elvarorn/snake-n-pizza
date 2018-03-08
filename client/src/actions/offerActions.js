@@ -6,8 +6,8 @@ export const getAllOffers = () => {
 };
 
 const getAllOffersSuccess = (offers) => {
-  return {
-    type: GET_ALL_OFFERS,
-    payload: offers
-  };
+    return {
+        type: GET_ALL_OFFERS,
+        payload: offers
+    };
 };
