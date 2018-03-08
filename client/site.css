@@ -143,3 +143,39 @@
 .cart-button {
   margin: 20px;
 }
+
+
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.menu-button {
+  background-color: white;
+     color: black;
+     border: 2px solid #4CAF50;
+     padding: 10px 24px;
+}
+
+
+.cart-button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.cart-button:hover {
+    background-color: #cc0000; /* Green */
+    color: white;
+}
+.cart-button {
+  background-color: white;
+     color: black;
+     border: 2px solid #cc0000;
+     padding: 10px 24px;
+
+}
