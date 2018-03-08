@@ -93,13 +93,14 @@
     padding-bottom: 35px;
 }
 
-.cart-container {
+.the-cart {
   width: 760px;
   margin: 0 auto;
   box-shadow: 5px 5px 20px rgba(155, 155, 155, .5);
-  width: 840px;
-  padding: 180px;
+  width: 1040px;
+  padding: 80px;
   text-align: center;
+  padding-top: 45px;
 }
 
 .textaboutus {
@@ -118,4 +119,27 @@
 
 .text-image {
   text-align: center;
+}
+
+.emptyCart {
+  width: 760px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 20px rgba(155, 155, 155, .5);
+  width: 840px;
+  padding: 180px;
+  text-align: center;
+}
+
+.the-cart .pizza-wrapper {
+  width: 250px;
+  height: auto;
+
+}
+.the-cart .pizza-wrapper img {
+  width: 100px;
+  height: 100px;
+}
+
+.cart-button {
+  margin: 20px;
 }

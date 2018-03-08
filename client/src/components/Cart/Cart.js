@@ -32,7 +32,7 @@ const Cart = () => {
     } else {
       return (
         <div className ="the-cart">
-        <button onClick={() => clearCart()}>Clear Cart</button>
+        <button className="cart-button" onClick={() => clearCart()}>Clear Cart</button>
             {obj.map(p => <Pizza key={p.id} pizza={p} />)}
         </div>
       );
