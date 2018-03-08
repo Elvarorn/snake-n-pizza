@@ -11,8 +11,10 @@ class Offers extends React.Component {
     render() {
       const { offer} = this.props;
       return (
-        <div className="container">
-            {offer.map((m, i) => ( <div className="offersbox" key={i}>{m.offer + ' Price: ' + m.price + ' Valid for: ' + m.validFor}</div> ))}
+        <div className="offer-container">
+            <p className="offertitle"> Offers </p>
+            {offer.map((m, i) => ( <div className="offersbox" key={i}>{m.offer +' Price: ' +m.price + ' Valid for: ' + m.validFor}</div> ))}
+
         </div>
       )
     }

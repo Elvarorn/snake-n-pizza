@@ -8,11 +8,12 @@ const NavigationBar = ({ logoImageUrl }) => {
         <nav className="navbar">
             <div className="nav-logo">
             <div className="navbar-image">
-                <img src={ logoImageUrl } alt=""/>
+                <img src={ logoImageUrl } alt="" width="1200" height="350" />
             </div>
                 <NavigationBarLinkWrapper>
 
                     <NavLink
+                    exact
                     to="/"
                     activeClassName="active"
                     className="nav-link">Menu</NavLink>
