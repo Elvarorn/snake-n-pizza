@@ -10,6 +10,22 @@
     padding: 20px;
 }
 
+p {
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0 0 24px;
+}
+
+.about-title {
+    padding-bottom: 35px;
+}
+
+.About-Us {
+    text-align: center;
+}
+
 .pizza-wrapper .pizza-name {
     margin-top: 10px;
     font-size: 24px;
