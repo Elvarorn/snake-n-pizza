@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 const App = () => {
   return (
       <div className="menu-offers">
-          <NavigationBar logoImageUrl="https://www1-lw.xda-cdn.com/files/2012/11/pizza-snake.jpg" />
+          <NavigationBar logoImageUrl="https://image.ibb.co/jxR33S/logosup.png" />
           <Switch>
               <Route exact path="/" component={ Menu } />
               <Route path="/Offers" component={ Offers } />
