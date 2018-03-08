@@ -7,6 +7,7 @@ import reducers from './reducers/reducers';
 import Menu from './components/Menu/Menu';
 import Offers from './components/Offers/Offers';
 import Cart from './components/Cart/Cart';
+import PizzaDetail from './components/PizzaDetail/PizzaDetail';
 import AboutUs from './components/AboutUs/AboutUs';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -20,6 +21,7 @@ const App = () => {
               <Route path="/Offers" component={ Offers } />
               <Route path="/AboutUs" component={ AboutUs } />
               <Route path="/Cart" component={ Cart } />
+              <Route path="/pizza" component= { PizzaDetail } />
           </ Switch>
       </div>
       );
