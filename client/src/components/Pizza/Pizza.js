@@ -10,7 +10,7 @@ const Pizza = ({ pizza }) => {
 
 var addToCartItemArr = (pizza) =>{
   cartItemArr.push(pizza);
-  console.log(cartItemArr);
+  alert('Item added to cart, please proceed to the cart to finish your purchase')
   localStorage.setItem('items-in-cart', JSON.stringify(cartItemArr));
 }
 
@@ -29,10 +29,9 @@ var pizzaDetail = (pizza) => {
               <img src={image} alt=""/>
           </div>
           <div className="pizza-name">{name}</div>
-
-          <button className="add-pizza-to-cart-button" onClick={() => addToCartItemArr(pizza)}>Add to Cart</button>
+          <button className="menu-button button" onClick={() => addToCartItemArr(pizza)}>Add to Cart</button>
           <Link to={`pizza/${pizza.id}`}>
-          <button className="pizza-to-detail-button" onClick={() => pizzaDetail(pizza)}>Details about the pizza!</button>
+          <button className="menu-button button" onClick={() => pizzaDetail(pizza)}>Details about the pizza!</button>
           </Link>
       </div>
     );
@@ -50,9 +49,6 @@ var pizzaDetail = (pizza) => {
   }
 
 };
-
-
-
 
 Pizza.PropTypes = {
   pizza: PropTypes.shape({
